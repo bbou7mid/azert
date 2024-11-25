@@ -11,7 +11,7 @@ $hotels = $hotelcontrol->listHotels();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liste des utilisateurs</title>
-    <!-- Bootstrap CSS -->
+
     
 </head>
 <body>

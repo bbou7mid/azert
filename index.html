@@ -1,736 +1,1075 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>TUNEASY - Your Own Guide</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
-  
-  
-    
-    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Star Admin2 </title>
 
+    <link rel="stylesheet" href="assets/vendors/feather/feather.css">
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendors/typicons/typicons.css">
+    <link rel="stylesheet" href="assets/vendors/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet" />
+    <link rel="stylesheet" href="assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/select.dataTables.min.css">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
   </head>
-
-  <body>
-    <div class="container-xxl bg-white p-0">
-      <!-- Spinner Start -->
-      <div
-        id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
-          <span class="sr-only">Loading...</span>
+  <body class="with-welcome-text">
+    <div class="container-scroller">
+      <div class="row p-0 m-0 proBanner" id="proBanner">
+        <div class="col-md-12 p-0 m-0">
+          <div class="card-body card-body-padding px-3 d-flex align-items-center justify-content-between">
+            <div class="ps-lg-3">
+              <div class="d-flex align-items-center justify-content-between">
+                <p class="mb-0 fw-medium me-3 buy-now-text">Free 24/7 customer support, updates, and more with this template!</p>
+                <a href="https://www.bootstrapdash.com/product/star-admin-pro/" target="_blank" class="btn me-2 buy-now-btn border-0">Buy Now</a>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="https://www.bootstrapdash.com/product/star-admin-pro/"><i class="ti-home me-3 text-white"></i></a>
+              <button id="bannerClose" class="btn border-0 p-0">
+                <i class="ti-close text-white"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Spinner End -->
 
-      <!-- Header Start -->
-      <div class="container-fluid bg-dark px-0">
-        <div class="row gx-0">
-          <div class="col-lg-3 bg-dark d-none d-lg-block">
-            <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-              <h1 class="m-0 text-primary text-uppercase">TUNEASY</h1>
+      <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+          <div class="me-3">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+              <span class="icon-menu"></span>
+            </button>
+          </div>
+          <div>
+            <a class="navbar-brand brand-logo" href="index.html">
+              <img src="assets/images/logo.svg" alt="logo" />
+            </a>
+            <a class="navbar-brand brand-logo-mini" href="index.html">
+              <img src="assets/images/logo-mini.svg" alt="logo" />
             </a>
           </div>
-          <div class="col-lg-9">
-            <div class="row gx-0 bg-white d-none d-lg-flex">
-              <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center py-2 me-4">
-                  <i class="fa fa-envelope text-primary me-2"></i>
-                  <p class="mb-0">TunEasy@gmail.com</p>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center py-2">
-                  <i class="fa fa-phone-alt text-primary me-2"></i>
-                  <p class="mb-0">+216 70 123 456</p>
-                </div>
-              </div>
-              <div class="col-lg-5 px-5 text-end">
-                <div class="d-inline-flex align-items-center py-2">
-                  <a class="me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                  <a class="me-3" href=""><i class="fab fa-twitter"></i></a>
-                  <a class="me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-                  <a class="me-3" href=""><i class="fab fa-instagram"></i></a>
-                  <a class="" href=""><i class="fab fa-youtube"></i></a>
-                </div>
-              </div>
-            </div>
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
-              <a href="index.html" class="navbar-brand d-block d-lg-none">
-                <h1 class="m-0 text-primary text-uppercase">TUNEASY</h1>
-              </a>
-              <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav mr-auto py-0">
-                  <a href="index.html" class="nav-item nav-link active">Home</a>
-                  <a href="about.html" class="nav-item nav-link">About</a>
-                  <a href="service.html" class="nav-item nav-link">Services</a>
-                  <a href="room.html" class="nav-item nav-link">Rooms</a>
-                  <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu rounded-0 m-0">
-                      <a href="booking.html" class="dropdown-item">Booking</a>
-                      <a href="team.html" class="dropdown-item">Our Team</a>
-                      <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                    </div>
-                  </div>
-                  <a href="contact.html" class="nav-item nav-link">Contact</a>
-                </div>
-              </div>
-            </nav>
-          </div>
         </div>
-      </div>
-      <!-- Header End -->
-
-      <!-- Carousel Start -->
-      <div class="container-fluid p-0 mb-5">
-        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img claass="w-100" src="img/TunisiaSidiBou.png" alt="Image" />
-              <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                <div class="p-3" style="max-width: 700px">
-                  <h6 clss="section-title text-white text-uppercase mb-3 animated slideInDown">Refreshing Culture</h6>
-                  <h1 class="display-3 text-white mb-4 animated slideInDown">Discover Tunisia Like Never Before</h1>
-                  <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Place Holder</a>
-                  <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Place Holder</a>
-                </div>
+        <div class="navbar-menu-wrapper d-flex align-items-top">
+          <ul class="navbar-nav">
+            <li class="nav-item fw-semibold d-none d-lg-block ms-0">
+              <h1 class="welcome-text">Good Morning, <span class="text-black fw-bold">John Doe</span></h1>
+              <h3 class="welcome-sub-text">Your performance summary this week </h3>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown d-none d-lg-block">
+              <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false"> Select Category </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
+                <a class="dropdown-item py-3">
+                  <p class="mb-0 fw-medium float-start">Select category</p>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis fw-medium text-dark">Bootstrap Bundle </p>
+                    <p class="fw-light small-text mb-0">This is a Bundle featuring 16 unique dashboards</p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis fw-medium text-dark">Angular Bundle</p>
+                    <p class="fw-light small-text mb-0">Everything you’ll ever need for your Angular projects</p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis fw-medium text-dark">VUE Bundle</p>
+                    <p class="fw-light small-text mb-0">Bundle of 6 Premium Vue Admin Dashboard</p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis fw-medium text-dark">React Bundle</p>
+                    <p class="fw-light small-text mb-0">Bundle of 8 Premium React Admin Dashboard</p>
+                  </div>
+                </a>
               </div>
-            </div>
-            <div class="carousel-item"></div>
-              
-            <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1348338.9129783962!2d8.278789406077295!3d33.807895253467066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1254736d8f4a6c41%3A0x4fc108db11a61b4!2sTunisie!5e0!3m2!1sfr!2stn!4v1699710867028!5m2!1sfr!2stn"
-            width="100%"
-            height="500"
-            style="border:0; border-radius: 10px;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            zoomcontrol="true"
-            gestureHandling="cooperative">
-        </iframe>
-
-              <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                <div class="p-3" style="max-width: 700px">
-                  
-
-                  <!-- Inclure la bibliothèque Leaflet -->
-                  
-                  
-                  
-                  
-                </div>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <div id="datepicker-popup" class="input-group date datepicker navbar-date-picker">
+                <span class="input-group-addon input-group-prepend border-right">
+                  <span class="icon-calendar input-group-text calendar-icon"></span>
+                </span>
+                <input type="text" class="form-control">
               </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            </li>
+            <li class="nav-item">
+              <form class="search-form" action="#">
+                <i class="icon-search"></i>
+                <input type="search" class="form-control" placeholder="Search Here" title="Search here">
+              </form>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+                <i class="icon-bell"></i>
+                <span class="count"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
+                <a class="dropdown-item py-3 border-bottom">
+                  <p class="mb-0 fw-medium float-start">You have 4 new notifications </p>
+                  <span class="badge badge-pill badge-primary float-end">View all</span>
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-alert m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject fw-normal text-dark mb-1">Application Error</h6>
+                    <p class="fw-light small-text mb-0"> Just now </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-lock-outline m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject fw-normal text-dark mb-1">Settings</h6>
+                    <p class="fw-light small-text mb-0"> Private message </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject fw-normal text-dark mb-1">New user registration</h6>
+                    <p class="fw-light small-text mb-0"> 2 days ago </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon-mail icon-lg"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="countDropdown">
+                <a class="dropdown-item py-3">
+                  <p class="mb-0 fw-medium float-start">You have 7 unread mails </p>
+                  <span class="badge badge-pill badge-primary float-end">View all</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="assets/images/faces/face10.jpg" alt="image" class="img-sm profile-pic">
+                  </div>
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis fw-medium text-dark">Marian Garner </p>
+                    <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="assets/images/faces/face12.jpg" alt="image" class="img-sm profile-pic">
+                  </div>
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis fw-medium text-dark">David Grey </p>
+                    <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="assets/images/faces/face1.jpg" alt="image" class="img-sm profile-pic">
+                  </div>
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis fw-medium text-dark">Travis Jenkins </p>
+                    <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+              <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="img-xs rounded-circle" src="assets/images/faces/face8.jpg" alt="Profile image"> </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+                <div class="dropdown-header text-center">
+                  <img class="img-md rounded-circle" src="assets/images/faces/face8.jpg" alt="Profile image">
+                  <p class="mb-1 mt-3 fw-semibold">Allen Moreno</p>
+                  <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+                </div>
+                <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
+                <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
+                <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
+                <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>
+                <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
+              </div>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
-      </div>
-      <!-- Carousel End -->
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
 
-      <!-- Booking Start -->
-      <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container">
-          <div class="bg-white shadow" style="padding: 35px">
-            <div class="row g-2">
-              <div class="col-md-10">
-                <div class="row g-2">
-                  <div class="col-md-6">
-                    <div class="date" id="date1" data-target-input="nearest">
-                      <input
-                        type="text"
-                        class="form-control datetimepicker-input"
-                        placeholder="Check in"
-                        data-target="#date1"
-                        data-toggle="datetimepicker" />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="date" id="date2" data-target-input="nearest">
-                      <input
-                        type="text"
-                        class="form-control datetimepicker-input"
-                        placeholder="Check out"
-                        data-target="#date2"
-                        data-toggle="datetimepicker" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <button class="btn btn-primary w-100">Submit</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Booking End -->
-
-      <!-- About Start -->
-      <div class="container-xxl py-5">
-        <div class="container">
-          <div class="row g-5 align-items-center">
-            <div class="col-lg-6">
-              <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
-              <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">TUNEASY</span></h1>
-              <p class="mb-4">
-                We bring you the essence of Tunisia through immersive cultural journeys that balance discovery and relaxation, making every moment
-                unforgettable. Experience Tunisia's soul while creating lasting memories.
-              </p>
-              <div class="row g-3 pb-4">
-                <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
-                  <div class="border rounded p-1">
-                    <div class="border rounded text-center p-4">
-                      <i class="fa fa-hotel fa-2x text-primary mb-2"></i>
-                      <h2 class="mb-1" data-toggle="counter-up">56</h2>
-                      <p class="mb-0">Plans</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
-                  <div class="border rounded p-1">
-                    <div class="border rounded text-center p-4">
-                      <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>
-                      <h2 class="mb-1" data-toggle="counter-up">123</h2>
-                      <p class="mb-0">Staffs</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
-                  <div class="border rounded p-1">
-                    <div class="border rounded text-center p-4">
-                      <i class="fa fa-users fa-2x text-primary mb-2"></i>
-                      <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                      <p class="mb-0">Clients</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a class="btn btn-primary py-3 px-5 mt-2" href="">Know More</a>
-            </div>
-            <div class="col-lg-6">
-              <div class="row g-3">
-                <div class="col-6 text-end">
-                  <img class="img-fluid rounded wow zoomIn" data-wow-delay="0.1s" src="img/ActivityParashuting.jpg" style="margin-top: 25%" />
-                </div>
-                <div class="col-6 text-start">
-                  <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/TunisiaBeach2.jpg" style="margin-top: 20%;"/>
-                </div>
-                <div class="col-6 text-end">
-                  <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/TunisiaMonastir.jpg" />
-                </div>
-                <div class="col-6 text-start">
-                  <img class="img-fluid rounded wow zoomIn" data-wow-delay="0.7s" src="img/EventMusical.jpg" style="margin-top: -25%;" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- About End -->
-
-      <!-- Room Start -->
-      <div class="container-xxl py-5">
-        <div class="container">
-          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title text-center text-primary text-uppercase">Our Plans</h6>
-            <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Programs</span></h1>
-          </div>
-          <div class="row g-4">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="room-item shadow rounded overflow-hidden">
-                <div class="position-relative">
-                  <img class="img-fluid" src="img/room-1.jpg" alt="" />
-                  <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">191dt/Night</small>
-                </div>
-                <div class="p-4 mt-2">
-                  <img src="img/ys.jpg">
-                  <div class="d-flex justify-content-between mb-3">
-                    <h5 class="mb-0"> yasmine hammamet</h5>
-                    <div class="ps-2">
-                      <small class="fa fa-star text-primary"></small>
-                      <small class="fa fa-star text-primary"></small>
-                      <small class="fa fa-star text-primary"></small>
-                      <small class="fa fa-star text-primary"></small>
-                     
-                    </div>
-                  </div>
-                  <div class="d-flex mb-3">
-                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
-                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
-                  </div>
-                  <p class="text-body mb-3">L'Hotel Oceana Hammamet Adults Only est situé dans des jardins luxuriants de palmiers, juste en face de la plage. 
-                    Il propose un centre de bien-être, des piscines, un sauna et quatre restaurants.</p>
-                  <div class="d-flex justify-content-between">
-                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">view detail</a>
-                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="room-item shadow rounded overflow-hidden">
-                <div class="position-relative">
-                  <img class="img-fluid" src="img/room-2.jpg" alt="" />
-                  <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">300 dt/Night</small>
-                </div>
-                <div class="p-4 mt-2">
-                  <img src="img/img2.jpg">
-                  <div class="d-flex justify-content-between mb-3">
-                    <h5 class="mb-0">
-                      Medina Solaria And Thalasso
-                      </h5>
-                    <div class="ps-2">
-                      <small class="fa fa-star text-primary"></small>
-                      <small class="fa fa-star text-primary"></small>
-                      <small class="fa fa-star text-primary"></small>
-                      <small class="fa fa-star text-primary"></small>
-                      <small class="fa fa-star text-primary"></small>
-                    </div>
-                  </div>
-                  <div class="d-flex mb-3">
-                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>4 Bed</small>
-                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
-                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
-                  </div>
-                  <p class="text-body mb-3">Le Medina Solaria And Thalasso dispose d'hébergements de luxe tout compris et d'une plage privée à Hammamet. 
-                    Ses services 5 étoiles incluent un spa, une salle de sport et plusieurs piscines..</p>
-                  <div class="d-flex justify-content-between">
-                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-              <div class="room-item shadow rounded overflow-hidden">
-                <div class="position-relative">
-                  <img class="img-fluid" src="img/room-3.jpg" alt="" />
-                  
-                  <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">400dt/Night</small>
-                </div>
-                <img src="img/img3.jpg">
-                <div class="p-4 mt-2">
-                  <div class="d-flex justify-content-between mb-3">
-                    
-                    <div class="ps-2">
-                      <small class="fa fa-star text-primary"></small>
-                      <small class="fa fa-star text-primary"></small>
-                      <small class="fa fa-star text-primary"></small>
-                      <small class="fa fa-star text-primary"></small>
-                      <small class="fa fa-star text-primary"></small>
-                    </div>
-                  </div>
-                  
-                  <h5 class="mb-0">
-                    The Mirage Resort & SPA
-                    </h5>
-                  <div class="d-flex mb-3">
-                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>2 Bed</small>
-                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>1 Bath</small>
-                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
-                  </div>
-                  <p class="text-body mb-3"> L'établissement The Mirage Resort & SPA est situé à Hammamet, à 5 km de Yasmine Hammamet. Ce complexe dispose d'une plage privée, d'un restaurant et d'un bar
-                    .</p>
-                  <div class="d-flex justify-content-between">
-                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Room End -->
-
-      <!-- Video Start -->
-      <div class="container-xxl py-5 px-0 wow zoomIn" data-wow-delay="0.1s">
-        <div class="row g-0">
-          <div class="col-md-6 bg-dark d-flex align-items-center">
-            <div class="p-5">
-              <h6 class="section-title text-start text-white text-uppercase mb-3">Refreshing Culture</h6>
-              <h1 class="text-white mb-4">Discover Tunisia Like Never Before</h1>
-              <p class="text-white mb-4">
-                We bring you the essence of Tunisia through immersive cultural journeys that balance discovery and relaxation, making every moment
-                unforgettable. Experience Tunisia's soul while creating lasting memories.
-              </p>
-              <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">login</a>
-              <a href="C:\xampp\htdocs\projet\view\front\login.html" href="" class="btn btn-light py-md-3 px-md-5">new account </a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="video">
-              <button
-                type="button"
-                class="btn-play"
-                data-bs-toggle="modal"
-                data-src="https://www.youtube.com/embed/H__i5LKFVXg"
-                data-bs-target="#videoModal">
-                <span></span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content rounded-0">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <!-- 16:9 aspect ratio -->
-              <div class="ratio ratio-16x9">
-                <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always" allow="autoplay"></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Video Start -->
-
-      <!-- Service Start -->
-      <div class="container-xxl py-5">
-        <div class="container">
-          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title text-center text-primary text-uppercase">Our Services</h6>
-            <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Services</span></h1>
-          </div>
-          <div class="row g-4">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <a class="service-item rounded" href="">
-                <div class="service-icon bg-transparent border rounded p-1">
-                  <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                    <i class="fa fa-hotel fa-2x text-primary"></i>
-                  </div>
-                </div>
-                <h5 class="mb-3">Rooms & Appartment</h5>
-                <p class="text-body mb-0">Temporary text.</p>
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="mdi mdi-grid-large menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
               </a>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-              <a class="service-item rounded" href="">
-                <div class="service-icon bg-transparent border rounded p-1">
-                  <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                    <i class="fa fa-utensils fa-2x text-primary"></i>
-                  </div>
-                </div>
-                <h5 class="mb-3">Food & Restaurant</h5>
-                <p class="text-body mb-0">Temporary text.</p>
+            </li>
+            <li class="nav-item nav-category"></li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <i class="menu-icon mdi mdi-floor-plan"></i>
+                <span class="menu-title">hotel</span>
+                <i class="menu-arrow"></i>
               </a>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-              <a class="service-item rounded" href="">
-                <div class="service-icon bg-transparent border rounded p-1">
-                  <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                    <i class="fa fa-spa fa-2x text-primary"></i>
-                  </div>
-                </div>
-                <h5 class="mb-3">Spa & Fitness</h5>
-                <p class="text-body mb-0">Temporary text.</p>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="showhotels.php">list of hotels</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="addhotel.html">add hotels</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="update.html">update hotels</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="deletehotel.html">delete hotels</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+                <i class="menu-icon mdi mdi-card-text-outline"></i>
+                <span class="menu-title">Form elements</span>
+                <i class="menu-arrow"></i>
               </a>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-              <a class="service-item rounded" href="">
-                <div class="service-icon bg-transparent border rounded p-1">
-                  <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                    <i class="fa fa-swimmer fa-2x text-primary"></i>
-                  </div>
-                </div>
-                <h5 class="mb-3">Sports & Gaming</h5>
-                <p class="text-body mb-0">Temporary text.</p>
+              <div class="collapse" id="form-elements">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+                <i class="menu-icon mdi mdi-chart-line"></i>
+                <span class="menu-title">Charts</span>
+                <i class="menu-arrow"></i>
               </a>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-              <a class="service-item rounded" href="">
-                <div class="service-icon bg-transparent border rounded p-1">
-                  <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                    <i class="fa fa-glass-cheers fa-2x text-primary"></i>
-                  </div>
-                </div>
-                <h5 class="mb-3">Event & Party</h5>
-                <p class="text-body mb-0"> Temporary text.</p>
+              <div class="collapse" id="charts">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+                <i class="menu-icon mdi mdi-table"></i>
+                <span class="menu-title">Tables</span>
+                <i class="menu-arrow"></i>
               </a>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-              <a class="service-item rounded" href="">
-                <div class="service-icon bg-transparent border rounded p-1">
-                  <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                    <i class="fa fa-dumbbell fa-2x text-primary"></i>
-                  </div>
-                </div>
-                <h5 class="mb-3">GYM & Yoga</h5>
-                <p class="text-body mb-0"> Temporary text.</p>
+              <div class="collapse" id="tables">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Basic table</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+                <i class="menu-icon mdi mdi-layers-outline"></i>
+                <span class="menu-title">Icons</span>
+                <i class="menu-arrow"></i>
               </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Service End -->
-
-      <!-- Testimonial Start -->
-      <div class="container-xxl testimonial my-5 py-5 bg-dark wow zoomIn" data-wow-delay="0.1s">
-        <div class="container">
-          <div class="owl-carousel testimonial-carousel py-5">
-            <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-              <p>
-                Temporary text
-              </p>
-              <div class="d-flex align-items-center">
-                <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px" />
-                <div class="ps-3">
-                  <h6 class="fw-bold mb-1">Client Name</h6>
-                  <small>Profession</small>
-                </div>
+              <div class="collapse" id="icons">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="pages/icons/font-awesome.html">Font Awesome</a></li>
+                </ul>
               </div>
-              <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
-            </div>
-            <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-              <p>
-                Temporary text
-              </p>
-              <div class="d-flex align-items-center">
-                <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 45px; height: 45px" />
-                <div class="ps-3">
-                  <h6 class="fw-bold mb-1">Client Name</h6>
-                  <small>Profession</small>
-                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                <i class="menu-icon mdi mdi-account-circle-outline"></i>
+                <span class="menu-title">User Pages</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Blank Page </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
+                </ul>
               </div>
-              <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
-            </div>
-            <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-              <p>
-                Temporary text
-              </p>
-              <div class="d-flex align-items-center">
-                <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 45px; height: 45px" />
-                <div class="ps-3">
-                  <h6 class="fw-bold mb-1">Client Name</h6>
-                  <small>Profession</small>
-                </div>
-              </div>
-              <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Testimonial End -->
-
-      <!-- Team Start -->
-      <div class="container-xxl py-5">
-        <div class="container">
-          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title text-center text-primary text-uppercase">Our Team</h6>
-            <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Staffs</span></h1>
-          </div>
-          <div class="row g-4">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="rounded shadow overflow-hidden">
-                <div class="position-relative">
-                  <img class="img-fluid" src="img/team-1.jpg" alt="" />
-                  <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-                <div class="text-center p-4 mt-3">
-                  <h5 class="fw-bold mb-0">Full Name</h5>
-                  <small>Designation</small>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="rounded shadow overflow-hidden">
-                <div class="position-relative">
-                  <img class="img-fluid" src="img/team-2.jpg" alt="" />
-                  <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-                <div class="text-center p-4 mt-3">
-                  <h5 class="fw-bold mb-0">Full Name</h5>
-                  <small>Designation</small>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-              <div class="rounded shadow overflow-hidden">
-                <div class="position-relative">
-                  <img class="img-fluid" src="img/team-3.jpg" alt="" />
-                  <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-                <div class="text-center p-4 mt-3">
-                  <h5 class="fw-bold mb-0">Full Name</h5>
-                  <small>Designation</small>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-              <div class="rounded shadow overflow-hidden">
-                <div class="position-relative">
-                  <img class="img-fluid" src="img/team-4.jpg" alt="" />
-                  <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-                <div class="text-center p-4 mt-3">
-                  <h5 class="fw-bold mb-0">Full Name</h5>
-                  <small>Designation</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Team End -->
-
-      <!-- Newsletter Start -->
-      <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="row justify-content-center">
-          <div class="col-lg-10 border rounded p-1">
-            <div class="border rounded text-center p-1">
-              <div class="bg-white rounded text-center p-5">
-                <h4 class="mb-4">Subscribe Our <span class="text-primary text-uppercase">Newsletter</span></h4>
-                <div class="position-relative mx-auto" style="max-width: 400px">
-                  <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email" />
-                  <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Newsletter Start -->
-
-      <!-- Footer Start -->
-      <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
-        <div class="container pb-5">
-          <div class="row g-5">
-            <div class="col-md-6 col-lg-4">
-              <div>
-                <a href="index.html"><h1 class="text-primary text-uppercase mb-3">TUNEASY</h1></a>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
-              <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-              <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+216 70 123 456</p>
-              <p class="mb-2"><i class="fa fa-envelope me-3"></i>TunEasy@gmail.com</p>
-              <div class="d-flex pt-2">
-                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
-            <div class="col-lg-5 col-md-12">
-              <div class="row gy-5 g-4">
-                <div class="col-md-6">
-                  <h6 class="section-title text-start text-primary text-uppercase mb-4">Company</h6>
-                  <a class="btn btn-link" href="">About Us</a>
-                  <a class="btn btn-link" href="">Contact Us</a>
-                  <a class="btn btn-link" href="">Privacy Policy</a>
-                  <a class="btn btn-link" href="">Terms & Condition</a>
-                  <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-md-6">
-                  <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
-                  <a class="btn btn-link" href="">Food & Restaurant</a>
-                  <a class="btn btn-link" href="">Spa & Fitness</a>
-                  <a class="btn btn-link" href="">Sports & Gaming</a>
-                  <a class="btn btn-link" href="">Event & Party</a>
-                  <a class="btn btn-link" href="">GYM & Yoga</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="copyright">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="docs/documentation.html">
+                <i class="menu-icon mdi mdi-file-document"></i>
+                <span class="menu-title">Documentation</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
             <div class="row">
-              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy; <a class="border-bottom" href="#">TUNEASY</a>, All Right Reserved.
-              </div>
-              <div class="col-md-6 text-center text-md-end">
-                <div class="footer-menu">
-                  <a href="">Home</a>
-                  <a href="">Cookies</a>
-                  <a href="">Help</a>
-                  <a href="">FQAs</a>
+              <div class="col-sm-12">
+                <div class="home-tab">
+                  <div class="d-sm-flex align-items-center justify-content-between border-bottom">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active ps-0" id="home-tab" data-bs-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#audiences" role="tab" aria-selected="false">Audiences</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#demographics" role="tab" aria-selected="false">Demographics</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link border-0" id="more-tab" data-bs-toggle="tab" href="#more" role="tab" aria-selected="false">More</a>
+                      </li>
+                    </ul>
+                    <div>
+                      <div class="btn-wrapper">
+                        <a href="#" class="btn btn-otline-dark align-items-center"><i class="icon-share"></i> Share</a>
+                        <a href="#" class="btn btn-otline-dark"><i class="icon-printer"></i> Print</a>
+                        <a href="#" class="btn btn-primary text-white me-0"><i class="icon-download"></i> Export</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-content tab-content-basic">
+                    <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="statistics-details d-flex align-items-center justify-content-between">
+                            <div>
+                              <p class="statistics-title">Bounce Rate</p>
+                              <h3 class="rate-percentage">32.53%</h3>
+                              <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>-0.5%</span></p>
+                            </div>
+                            <div>
+                              <p class="statistics-title">Page Views</p>
+                              <h3 class="rate-percentage">7,682</h3>
+                              <p class="text-success d-flex"><i class="mdi mdi-menu-up"></i><span>+0.1%</span></p>
+                            </div>
+                            <div>
+                              <p class="statistics-title">New Sessions</p>
+                              <h3 class="rate-percentage">68.8</h3>
+                              <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>68.8</span></p>
+                            </div>
+                            <div class="d-none d-md-block">
+                              <p class="statistics-title">Avg. Time on Site</p>
+                              <h3 class="rate-percentage">2m:35s</h3>
+                              <p class="text-success d-flex"><i class="mdi mdi-menu-down"></i><span>+0.8%</span></p>
+                            </div>
+                            <div class="d-none d-md-block">
+                              <p class="statistics-title">New Sessions</p>
+                              <h3 class="rate-percentage">68.8</h3>
+                              <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>68.8</span></p>
+                            </div>
+                            <div class="d-none d-md-block">
+                              <p class="statistics-title">Avg. Time on Site</p>
+                              <h3 class="rate-percentage">2m:35s</h3>
+                              <p class="text-success d-flex"><i class="mdi mdi-menu-down"></i><span>+0.8%</span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-8 d-flex flex-column">
+                          <div class="row flex-grow">
+                            <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
+                              <div class="card card-rounded">
+                                <div class="card-body">
+                                  <div class="d-sm-flex justify-content-between align-items-start">
+                                    <div>
+                                      <h4 class="card-title card-title-dash">Performance Line Chart</h4>
+                                      <h5 class="card-subtitle card-subtitle-dash">Lorem Ipsum is simply dummy text of the printing</h5>
+                                    </div>
+                                    <div id="performanceLine-legend"></div>
+                                  </div>
+                                  <div class="chartjs-wrapper mt-4">
+                                    <canvas id="performanceLine" width=""></canvas>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 d-flex flex-column">
+                          <div class="row flex-grow">
+                            <div class="col-md-6 col-lg-12 grid-margin stretch-card">
+                              <div class="card bg-primary card-rounded">
+                                <div class="card-body pb-0">
+                                  <h4 class="card-title card-title-dash text-white mb-4">Status Summary</h4>
+                                  <div class="row">
+                                    <div class="col-sm-4">
+                                      <p class="status-summary-ight-white mb-1">Closed Value</p>
+                                      <h2 class="text-info">357</h2>
+                                    </div>
+                                    <div class="col-sm-8">
+                                      <div class="status-summary-chart-wrapper pb-4">
+                                        <canvas id="status-summary"></canvas>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6 col-lg-12 grid-margin stretch-card">
+                              <div class="card card-rounded">
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-lg-6">
+                                      <div class="d-flex justify-content-between align-items-center mb-2 mb-sm-0">
+                                        <div class="circle-progress-width">
+                                          <div id="totalVisitors" class="progressbar-js-circle pr-2"></div>
+                                        </div>
+                                        <div>
+                                          <p class="text-small mb-2">Total Visitors</p>
+                                          <h4 class="mb-0 fw-bold">26.80%</h4>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="d-flex justify-content-between align-items-center">
+                                        <div class="circle-progress-width">
+                                          <div id="visitperday" class="progressbar-js-circle pr-2"></div>
+                                        </div>
+                                        <div>
+                                          <p class="text-small mb-2">Visits per day</p>
+                                          <h4 class="mb-0 fw-bold">9065</h4>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-8 d-flex flex-column">
+                          <div class="row flex-grow">
+                            <div class="col-12 grid-margin stretch-card">
+                              <div class="card card-rounded">
+                                <div class="card-body">
+                                  <div class="d-sm-flex justify-content-between align-items-start">
+                                    <div>
+                                      <h4 class="card-title card-title-dash">Market Overview</h4>
+                                      <p class="card-subtitle card-subtitle-dash">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                    </div>
+                                    <div>
+                                      <div class="dropdown">
+                                        <button class="btn btn-light dropdown-toggle toggle-dark btn-lg mb-0 me-0" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> This month </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                          <h6 class="dropdown-header">Settings</h6>
+                                          <a class="dropdown-item" href="#">Action</a>
+                                          <a class="dropdown-item" href="#">Another action</a>
+                                          <a class="dropdown-item" href="#">Something else here</a>
+                                          <div class="dropdown-divider"></div>
+                                          <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="d-sm-flex align-items-center mt-1 justify-content-between">
+                                    <div class="d-sm-flex align-items-center mt-4 justify-content-between">
+                                      <h2 class="me-2 fw-bold">$36,2531.00</h2>
+                                      <h4 class="me-2">USD</h4>
+                                      <h4 class="text-success">(+1.37%)</h4>
+                                    </div>
+                                    <div class="me-3">
+                                      <div id="marketingOverview-legend"></div>
+                                    </div>
+                                  </div>
+                                  <div class="chartjs-bar-wrapper mt-3">
+                                    <canvas id="marketingOverview"></canvas>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row flex-grow">
+                            <div class="col-12 grid-margin stretch-card">
+                              <div class="card card-rounded table-darkBGImg">
+                                <div class="card-body">
+                                  <div class="col-sm-8">
+                                    <h3 class="text-white upgrade-info mb-0"> Enhance your <span class="fw-bold">Campaign</span> for better outreach </h3>
+                                    <a href="#" class="btn btn-info upgrade-btn">Upgrade Account!</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row flex-grow">
+                            <div class="col-12 grid-margin stretch-card">
+                              <div class="card card-rounded">
+                                <div class="card-body">
+                                  <div class="d-sm-flex justify-content-between align-items-start">
+                                    <div>
+                                      <h4 class="card-title card-title-dash">Pending Requests</h4>
+                                      <p class="card-subtitle card-subtitle-dash">You have 50+ new requests</p>
+                                    </div>
+                                    <div>
+                                      <button class="btn btn-primary btn-lg text-white mb-0 me-0" type="button"><i class="mdi mdi-account-plus"></i>Add new member</button>
+                                    </div>
+                                  </div>
+                                  <div class="table-responsive  mt-1">
+                                    <table class="table select-table">
+                                      <thead>
+                                        <tr>
+                                          <th>
+                                            <div class="form-check form-check-flat mt-0">
+                                              <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" aria-checked="false" id="check-all"><i class="input-helper"></i></label>
+                                            </div>
+                                          </th>
+                                          <th>Customer</th>
+                                          <th>Company</th>
+                                          <th>Progress</th>
+                                          <th>Status</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <div class="form-check form-check-flat mt-0">
+                                              <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="d-flex ">
+                                              <img src="assets/images/faces/face1.jpg" alt="">
+                                              <div>
+                                                <h6>Brandon Washington</h6>
+                                                <p>Head admin</p>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <h6>Company name 1</h6>
+                                            <p>company type</p>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
+                                                <p class="text-success">79%</p>
+                                                <p>85/162</p>
+                                              </div>
+                                              <div class="progress progress-md">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="badge badge-opacity-warning">In progress</div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="form-check form-check-flat mt-0">
+                                              <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="d-flex">
+                                              <img src="assets/images/faces/face2.jpg" alt="">
+                                              <div>
+                                                <h6>Laura Brooks</h6>
+                                                <p>Head admin</p>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <h6>Company name 1</h6>
+                                            <p>company type</p>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
+                                                <p class="text-success">65%</p>
+                                                <p>85/162</p>
+                                              </div>
+                                              <div class="progress progress-md">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="badge badge-opacity-warning">In progress</div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="form-check form-check-flat mt-0">
+                                              <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="d-flex">
+                                              <img src="assets/images/faces/face3.jpg" alt="">
+                                              <div>
+                                                <h6>Wayne Murphy</h6>
+                                                <p>Head admin</p>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <h6>Company name 1</h6>
+                                            <p>company type</p>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
+                                                <p class="text-success">65%</p>
+                                                <p>85/162</p>
+                                              </div>
+                                              <div class="progress progress-md">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 38%" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="badge badge-opacity-warning">In progress</div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="form-check form-check-flat mt-0">
+                                              <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="d-flex">
+                                              <img src="assets/images/faces/face4.jpg" alt="">
+                                              <div>
+                                                <h6>Matthew Bailey</h6>
+                                                <p>Head admin</p>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <h6>Company name 1</h6>
+                                            <p>company type</p>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
+                                                <p class="text-success">65%</p>
+                                                <p>85/162</p>
+                                              </div>
+                                              <div class="progress progress-md">
+                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="badge badge-opacity-danger">Pending</div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="form-check form-check-flat mt-0">
+                                              <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="d-flex">
+                                              <img src="assets/images/faces/face5.jpg" alt="">
+                                              <div>
+                                                <h6>Katherine Butler</h6>
+                                                <p>Head admin</p>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <h6>Company name 1</h6>
+                                            <p>company type</p>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
+                                                <p class="text-success">65%</p>
+                                                <p>85/162</p>
+                                              </div>
+                                              <div class="progress progress-md">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="badge badge-opacity-success">Completed</div>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row flex-grow">
+                            <div class="col-md-6 col-lg-6 grid-margin stretch-card">
+                              <div class="card card-rounded">
+                                <div class="card-body card-rounded">
+                                  <h4 class="card-title  card-title-dash">Recent Events</h4>
+                                  <div class="list align-items-center border-bottom py-2">
+                                    <div class="wrapper w-100">
+                                      <p class="mb-2 fw-medium"> Change in Directors </p>
+                                      <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                          <i class="mdi mdi-calendar text-muted me-1"></i>
+                                          <p class="mb-0 text-small text-muted">Mar 14, 2019</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="list align-items-center border-bottom py-2">
+                                    <div class="wrapper w-100">
+                                      <p class="mb-2 fw-medium"> Other Events </p>
+                                      <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                          <i class="mdi mdi-calendar text-muted me-1"></i>
+                                          <p class="mb-0 text-small text-muted">Mar 14, 2019</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="list align-items-center border-bottom py-2">
+                                    <div class="wrapper w-100">
+                                      <p class="mb-2 fw-medium"> Quarterly Report </p>
+                                      <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                          <i class="mdi mdi-calendar text-muted me-1"></i>
+                                          <p class="mb-0 text-small text-muted">Mar 14, 2019</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="list align-items-center border-bottom py-2">
+                                    <div class="wrapper w-100">
+                                      <p class="mb-2 fw-medium"> Change in Directors </p>
+                                      <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                          <i class="mdi mdi-calendar text-muted me-1"></i>
+                                          <p class="mb-0 text-small text-muted">Mar 14, 2019</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="list align-items-center pt-3">
+                                    <div class="wrapper w-100">
+                                      <p class="mb-0">
+                                        <a href="#" class="fw-bold text-primary">Show all <i class="mdi mdi-arrow-right ms-2"></i></a>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 grid-margin stretch-card">
+                              <div class="card card-rounded">
+                                <div class="card-body">
+                                  <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h4 class="card-title card-title-dash">Activities</h4>
+                                    <p class="mb-0">20 finished, 5 remaining</p>
+                                  </div>
+                                  <ul class="bullet-line-list">
+                                    <li>
+                                      <div class="d-flex justify-content-between">
+                                        <div><span class="text-light-green">Ben Tossell</span> assign you a task</div>
+                                        <p>Just now</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="d-flex justify-content-between">
+                                        <div><span class="text-light-green">Oliver Noah</span> assign you a task</div>
+                                        <p>1h</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="d-flex justify-content-between">
+                                        <div><span class="text-light-green">Jack William</span> assign you a task</div>
+                                        <p>1h</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="d-flex justify-content-between">
+                                        <div><span class="text-light-green">Leo Lucas</span> assign you a task</div>
+                                        <p>1h</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="d-flex justify-content-between">
+                                        <div><span class="text-light-green">Thomas Henry</span> assign you a task</div>
+                                        <p>1h</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="d-flex justify-content-between">
+                                        <div><span class="text-light-green">Ben Tossell</span> assign you a task</div>
+                                        <p>1h</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="d-flex justify-content-between">
+                                        <div><span class="text-light-green">Ben Tossell</span> assign you a task</div>
+                                        <p>1h</p>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                  <div class="list align-items-center pt-3">
+                                    <div class="wrapper w-100">
+                                      <p class="mb-0">
+                                        <a href="#" class="fw-bold text-primary">Show all <i class="mdi mdi-arrow-right ms-2"></i></a>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 d-flex flex-column">
+                          <div class="row flex-grow">
+                            <div class="col-12 grid-margin stretch-card">
+                              <div class="card card-rounded">
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <div class="d-flex justify-content-between align-items-center">
+                                        <h4 class="card-title card-title-dash">Todo list</h4>
+                                        <div class="add-items d-flex mb-0">
+                                          <!-- <input type="text" class="form-control todo-list-input" placeholder="What do you need to do today?"> -->
+                                          <button class="add btn btn-icons btn-rounded btn-primary todo-list-add-btn text-white me-0 pl-12p"><i class="mdi mdi-plus"></i></button>
+                                        </div>
+                                      </div>
+                                      <div class="list-wrapper">
+                                        <ul class="todo-list todo-list-rounded">
+                                          <li class="d-block">
+                                            <div class="form-check w-100">
+                                              <label class="form-check-label">
+                                                <input class="checkbox" type="checkbox"> Lorem Ipsum is simply dummy text of the printing <i class="input-helper rounded"></i>
+                                              </label>
+                                              <div class="d-flex mt-2">
+                                                <div class="ps-4 text-small me-3">24 June 2020</div>
+                                                <div class="badge badge-opacity-warning me-3">Due tomorrow</div>
+                                                <i class="mdi mdi-flag ms-2 flag-color"></i>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li class="d-block">
+                                            <div class="form-check w-100">
+                                              <label class="form-check-label">
+                                                <input class="checkbox" type="checkbox"> Lorem Ipsum is simply dummy text of the printing <i class="input-helper rounded"></i>
+                                              </label>
+                                              <div class="d-flex mt-2">
+                                                <div class="ps-4 text-small me-3">23 June 2020</div>
+                                                <div class="badge badge-opacity-success me-3">Done</div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="form-check w-100">
+                                              <label class="form-check-label">
+                                                <input class="checkbox" type="checkbox"> Lorem Ipsum is simply dummy text of the printing <i class="input-helper rounded"></i>
+                                              </label>
+                                              <div class="d-flex mt-2">
+                                                <div class="ps-4 text-small me-3">24 June 2020</div>
+                                                <div class="badge badge-opacity-success me-3">Done</div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li class="border-bottom-0">
+                                            <div class="form-check w-100">
+                                              <label class="form-check-label">
+                                                <input class="checkbox" type="checkbox"> Lorem Ipsum is simply dummy text of the printing <i class="input-helper rounded"></i>
+                                              </label>
+                                              <div class="d-flex mt-2">
+                                                <div class="ps-4 text-small me-3">24 June 2020</div>
+                                                <div class="badge badge-opacity-danger me-3">Expired</div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row flex-grow">
+                            <div class="col-12 grid-margin stretch-card">
+                              <div class="card card-rounded">
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h4 class="card-title card-title-dash">Type By Amount</h4>
+                                      </div>
+                                      <div>
+                                        <canvas class="my-auto" id="doughnutChart"></canvas>
+                                      </div>
+                                      <div id="doughnutChart-legend" class="mt-5 text-center"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row flex-grow">
+                            <div class="col-12 grid-margin stretch-card">
+                              <div class="card card-rounded">
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <div>
+                                          <h4 class="card-title card-title-dash">Leave Report</h4>
+                                        </div>
+                                        <div>
+                                          <div class="dropdown">
+                                            <button class="btn btn-light dropdown-toggle toggle-dark btn-lg mb-0 me-0" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Month Wise </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                              <h6 class="dropdown-header">week Wise</h6>
+                                              <a class="dropdown-item" href="#">Year Wise</a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="mt-3">
+                                        <canvas id="leaveReport"></canvas>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row flex-grow">
+                            <div class="col-12 grid-margin stretch-card">
+                              <div class="card card-rounded">
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <div>
+                                          <h4 class="card-title card-title-dash">Top Performer</h4>
+                                        </div>
+                                      </div>
+                                      <div class="mt-3">
+                                        <div class="wrapper d-flex align-items-center justify-content-between py-2 border-bottom">
+                                          <div class="d-flex">
+                                            <img class="img-sm rounded-10" src="assets/images/faces/face1.jpg" alt="profile">
+                                            <div class="wrapper ms-3">
+                                              <p class="ms-1 mb-1 fw-bold">Brandon Washington</p>
+                                              <small class="text-muted mb-0">162543</small>
+                                            </div>
+                                          </div>
+                                          <div class="text-muted text-small"> 1h ago </div>
+                                        </div>
+                                        <div class="wrapper d-flex align-items-center justify-content-between py-2 border-bottom">
+                                          <div class="d-flex">
+                                            <img class="img-sm rounded-10" src="assets/images/faces/face2.jpg" alt="profile">
+                                            <div class="wrapper ms-3">
+                                              <p class="ms-1 mb-1 fw-bold">Wayne Murphy</p>
+                                              <small class="text-muted mb-0">162543</small>
+                                            </div>
+                                          </div>
+                                          <div class="text-muted text-small"> 1h ago </div>
+                                        </div>
+                                        <div class="wrapper d-flex align-items-center justify-content-between py-2 border-bottom">
+                                          <div class="d-flex">
+                                            <img class="img-sm rounded-10" src="assets/images/faces/face3.jpg" alt="profile">
+                                            <div class="wrapper ms-3">
+                                              <p class="ms-1 mb-1 fw-bold">Katherine Butler</p>
+                                              <small class="text-muted mb-0">162543</small>
+                                            </div>
+                                          </div>
+                                          <div class="text-muted text-small"> 1h ago </div>
+                                        </div>
+                                        <div class="wrapper d-flex align-items-center justify-content-between py-2 border-bottom">
+                                          <div class="d-flex">
+                                            <img class="img-sm rounded-10" src="assets/images/faces/face4.jpg" alt="profile">
+                                            <div class="wrapper ms-3">
+                                              <p class="ms-1 mb-1 fw-bold">Matthew Bailey</p>
+                                              <small class="text-muted mb-0">162543</small>
+                                            </div>
+                                          </div>
+                                          <div class="text-muted text-small"> 1h ago </div>
+                                        </div>
+                                        <div class="wrapper d-flex align-items-center justify-content-between pt-2">
+                                          <div class="d-flex">
+                                            <img class="img-sm rounded-10" src="assets/images/faces/face5.jpg" alt="profile">
+                                            <div class="wrapper ms-3">
+                                              <p class="ms-1 mb-1 fw-bold">Rafell John</p>
+                                              <small class="text-muted mb-0">Alaska, USA</small>
+                                            </div>
+                                          </div>
+                                          <div class="text-muted text-small"> 1h ago </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span>
+              <span class="float-none float-sm-end d-block mt-1 mt-sm-0 text-center">Copyright © 2023. All rights reserved.</span>
+            </div>
+          </footer>
+          <!-- partial -->
         </div>
+        <!-- main-panel ends -->
       </div>
-      <!-- Footer End -->
-
-      <!-- Back to Top -->
-      <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+      <!-- page-body-wrapper ends -->
     </div>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/chart.umd.js"></script>
+    <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/template.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="assets/js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <!-- <script src="assets/js/Chart.roundedBarCharts.js"></script> -->
+    <!-- End custom js for this page-->
   </body>
 </html>
